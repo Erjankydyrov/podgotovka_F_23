@@ -98,14 +98,14 @@ nav {
     align-items: center;
     gap: 48px;
 
-    transition: all ease-in .2s;
+    transition: all ease-in 0.2s;
 
     @media (max-width: 955px) {
       gap: 30px;
     }
     @media (max-width: 840px) {
       gap: 20px;
-    } 
+    }
     @media (max-width: 768px) {
       display: none;
     }
@@ -114,36 +114,72 @@ nav {
       text-decoration: none;
       color: white;
       font-size: 18px;
-      transition: color ease-in .2s;
+      transition: color ease-in 0.2s;
     }
     a:hover {
-      color: #C99E71;
+      color: #c99e71;
     }
   }
 }
 
 header {
   background-image: url(../images/header.png);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 97px 0;
+
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
 
   .header_flex {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
   }
+
   .header_text_box {
     max-width: 530px;
-    color: white;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: white;
+
+      @media (max-width: 768px) {
+        font-size: 50px;
+        text-align: center;
+      }
+      @media (max-width: 450px) {
+        font-size: 30px;
+      }
+    }
 
     p {
-      color: rgba(255, 255, 255, 0.80);
+      color: rgba(255, 255, 255, 0.8);
       font-size: 20px;
       font-weight: 500;
       line-height: 180%;
 
       margin-top: 32px;
+
+      @media (max-width: 768px) {
+        margin-top: 26px;
+        font-size: 18px;
+      }
+      @media (max-width: 450px) {
+        font-size: 16px;
+      }
     }
 
     button {
@@ -153,13 +189,23 @@ header {
       font-weight: 700;
       text-transform: uppercase;
       font-size: 18px;
-      background-color: #C99E71;
+      background-color: #c99e71;
       cursor: pointer;
+
+      @media (max-width: 768px) {
+        margin: 0 auto;
+        margin-top: 50px;
+      }
     }
   }
+
   .header_image_box {
     img {
       cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 50px;
     }
   }
 }
