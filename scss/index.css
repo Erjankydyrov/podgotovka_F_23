@@ -62,6 +62,24 @@ nav .nav_flex {
   justify-content: space-between;
   align-items: center;
 }
+nav .toggle {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  nav .toggle {
+    display: none;
+  }
+}
+nav .toggle .line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
 nav .navigation {
   padding: 0;
   margin: 0;
@@ -70,6 +88,22 @@ nav .navigation {
   justify-content: center;
   align-items: center;
   gap: 48px;
+  transition: all ease-in 0.2s;
+}
+@media (max-width: 955px) {
+  nav .navigation {
+    gap: 30px;
+  }
+}
+@media (max-width: 840px) {
+  nav .navigation {
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  nav .navigation {
+    display: none;
+  }
 }
 nav .navigation a {
   text-decoration: none;
