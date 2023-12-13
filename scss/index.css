@@ -48,6 +48,12 @@ button {
   font-family: "Inter", sans-serif;
 }
 
+.container {
+  max-width: 1170px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
 nav {
   background-color: #1c1814;
   padding: 30px 0;
@@ -113,4 +119,40 @@ nav .navigation a {
 }
 nav .navigation a:hover {
   color: #C99E71;
+}
+
+header {
+  background-image: url(../images/header.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 97px 0;
+}
+header .header_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+header .header_text_box {
+  max-width: 530px;
+  color: white;
+}
+header .header_text_box p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 180%;
+  margin-top: 32px;
+}
+header .header_text_box button {
+  color: white;
+  margin-top: 64px;
+  padding: 24px 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  background-color: #C99E71;
+  cursor: pointer;
+}
+header .header_image_box img {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
