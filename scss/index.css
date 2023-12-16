@@ -71,7 +71,7 @@ button {
 }
 
 .coffee_color {
-  color: #C99E71;
+  color: #c99e71;
 }
 
 nav {
@@ -232,7 +232,7 @@ header .header_image_box img {
 }
 
 main {
-  background-color: #14110E;
+  background-color: #14110e;
 }
 main .section_1 {
   padding: 100px 20px;
@@ -307,8 +307,8 @@ main .section_2 .section_2_images img {
 }
 main .section_2 .section_2_text {
   max-width: 500px;
-  background: #1C1814;
-  padding: 90px 50px;
+  background: #1c1814;
+  padding: 120px 50px;
   margin-left: 32px;
 }
 @media (max-width: 900px) {
@@ -334,7 +334,7 @@ main .section_2 .section_2_text h2 {
   }
 }
 main .section_2 .section_2_text p.coffee_color {
-  color: #C99E71;
+  color: #c99e71;
   font-size: 18px;
   font-weight: 600;
 }
@@ -343,4 +343,100 @@ main .section_2 .section_2_text p {
   font-size: 16px;
   font-weight: 500;
   line-height: 180%;
+}
+main .section_3 {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+main .section_3 h2 {
+  color: white;
+}
+@media (max-width: 850px) {
+  main .section_3 h2 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  main .section_3 h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 370px) {
+  main .section_3 h2 {
+    font-size: 24px;
+  }
+}
+main .section_3 .popular_products {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 850px) {
+  main .section_3 .popular_products {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+main .section_3 .popular_products .coffee_product {
+  max-width: 366px;
+  width: 100%;
+  background: #121315;
+  padding: 40px;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+@media (max-width: 850px) {
+  main .section_3 .popular_products .coffee_product {
+    margin-right: 0;
+  }
+}
+main .section_3 .popular_products .coffee_product .mark {
+  margin-bottom: 15px;
+}
+main .section_3 .popular_products .coffee_product > img {
+  width: 100%;
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .section_3 .popular_products .coffee_product h3 {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+main .section_3 .popular_products .coffee_product p {
+  display: inline;
+  color: white;
+}
+main .section_3 .popular_products .coffee_product .coffee_btn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 21px;
+  padding: 13px 20px;
+  background: #c99e71;
+  cursor: pointer;
+}
+main .section_3 .popular_products .coffee_product .coffee_btn p {
+  font-size: 18px;
+  font-weight: 600;
+}
+main .section_3 .popular_products .coffee_product .coffee_btn img {
+  max-width: 24px;
+  margin-right: 10px;
+}
+main .section_3 .popular_products .coffee_product:last-child {
+  margin-right: 0;
+}
+main .section_3 .popular_products .coffee_product:hover .mark {
+  display: none;
+}
+main .section_3 .popular_products .coffee_product:hover .price {
+  display: none;
+}
+main .section_3 .popular_products .coffee_product:hover .coffee_btn {
+  display: flex;
 }/*# sourceMappingURL=index.css.map */
